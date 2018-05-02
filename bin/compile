@@ -26,7 +26,7 @@ APP_CACHE="$CACHE_DIR/.i42/mongodb/"
 # from https://docs.mongodb.com/manual/tutorial/install-mongodb-on-linux/
 echo "Downloading and installing mongodb..."
 mkdir -p "$APP_DIR"
-mkdir -p "APP_CACHE"
+mkdir -p "$APP_CACHE"
 
 
 cd $APP_CACHE
