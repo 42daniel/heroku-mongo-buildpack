@@ -1,5 +1,5 @@
 #!/bin/sh
-
+echo in detect script
 # this pack is valid for apps with a hello.txt in the root
 if [ -f $1/.ic-catalog.yml ]; then
   echo "Catalog Framework"

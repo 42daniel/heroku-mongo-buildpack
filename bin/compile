@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+echo in comile script
 ####### Configure environment
 
 set -o errexit    # always exit on error
