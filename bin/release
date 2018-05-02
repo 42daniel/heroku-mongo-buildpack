@@ -2,5 +2,5 @@
 cat << EOF
 ---
 default_process_types:
-  web: mongod --dbpath $HOME/data/db
+  web: $HOME/.i42/mongodb/mongodb-linux-x86_64-3.6.4/bin/mongod --dbpath $HOME/data/db
 EOF
