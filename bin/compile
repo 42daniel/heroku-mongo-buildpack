@@ -8,12 +8,6 @@ set -o posix      # more strict failures in subshells
 # set -x          # enable debugging
 
 # Configure directories
-build_dir=$1
-cache_dir=$2
-env_dir=$3
-
-
-bp_dir=$(cd $(dirname $0); cd ..; pwd)
 BUILD_DIR=${1:-}
 CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
@@ -38,7 +32,7 @@ cp -R -n mongodb-linux-x86_64-3.6.4/ $APP_DIR
 
 
 echo "Creating runtime environment"
-mkdir -p $build_dir/.profile.d
-mkdir -p $build_dir/data/db
+mkdir -p BUILD_DIR/.profile.d
+mkdir -p BUILD_DIR/data/db
 
-echo "export PATH=\"\$HOME/.i42/mongodb/bin:\$PATH\"" > $build_dir/.profile.d/mongo.sh
+echo "export PATH=\"\$HOME/.i42/mongodb/bin:\$PATH\"" > BUILD_DIR/.profile.d/mongo.sh
