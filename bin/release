@@ -2,5 +2,5 @@
 cat << EOF
 ---
 default_process_types:
-  web: $HOME/.i42/mongodb/bin/mongod --dbpath $HOME/db
+  db: $HOME/.i42/mongodb/bin/mongod --dbpath $HOME/db
 EOF
