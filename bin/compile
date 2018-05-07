@@ -27,7 +27,7 @@ cd $APP_CACHE
 curl -O https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.6.4.tgz
 tar -zxvf mongodb-linux-x86_64-3.6.4.tgz
 mkdir -p $APP_DIR
-cp -R -n mongodb-linux-x86_64-3.6.4/ $APP_DIR
+cp -R -n mongodb-linux-x86_64-3.6.4/* $APP_DIR
 
 
 
