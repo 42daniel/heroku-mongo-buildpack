@@ -33,6 +33,6 @@ cp -R -n mongodb-linux-x86_64-3.6.4/ $APP_DIR
 
 echo "Creating runtime environment"
 mkdir -p BUILD_DIR/.profile.d
-mkdir -p BUILD_DIR/data/db
+mkdir -p BUILD_DIR/db
 
 echo "export PATH=\"\$HOME/.i42/mongodb/bin:\$PATH\"" > BUILD_DIR/.profile.d/mongo.sh
